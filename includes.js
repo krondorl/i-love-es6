@@ -1,0 +1,12 @@
+console.log(`'alma'.includes('lm')`);
+console.log('alma'.includes('lm'));
+console.log(`'alma'.includes('xl')`);
+console.log('alma'.includes('xl'));
+console.log(`'szilva'.includes('il')`);
+console.log('szilva'.includes('il'));
+console.log(`'szilva'.includes('nil')`);
+console.log('szilva'.includes('nil'));
+console.log(`'kutya'.includes('ty')`);
+console.log('kutya'.includes('ty'));
+console.log(`'kutya'.includes('uba')`);
+console.log('kutya'.includes('uba'));
