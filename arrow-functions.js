@@ -57,6 +57,10 @@ var duck = () => {
   return 'Quack!';
 }
 
+var isDivThree = (n) => (n % 3 == 0);
+
+var isDivFour = (n) => (n % 4 == 0);
+
 console.log('>add(1,2)');
 console.log(add(1,2));
 console.log('>subtract(5,6)');
@@ -80,3 +84,7 @@ console.log(dog());
 console.log(cat());
 console.log(pig());
 console.log(duck());
+console.log(`isDivThree(3)`);
+console.log(isDivThree(3));
+console.log(`isDivFour(5)`);
+console.log(isDivFour(5));
