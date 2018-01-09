@@ -12,7 +12,7 @@ const isPrime = (num) => {
   return num !== 1;
 };
 
-sumPrimesList = () => {
+const sumPrimesList = () => {
   let primes = [];
   for (let i = 2; i < 2000000; i++) {
     if (isPrime(i)) {
