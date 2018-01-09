@@ -19,7 +19,7 @@ const multiples = (x) => {
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   let sum = mults.reduce(reducer);
   return sum;
-}
+};
 
 console.log(`Math problems 01`);
 console.log(`multiples(1000)`);

@@ -12,14 +12,14 @@ const fibo = (numMax) => {
     fibArray.push(x);
   }
   return fibArray;
-}
+};
 
 const evenFibs = () => {
   let fib = fibo(32);
   return fib
     .filter((x) => x % 2 == 0)
     .reduce((accumulator, currentValue) => accumulator + currentValue);
-}
+};
 
 console.log(`evenFibs()`);
 console.log(evenFibs());
