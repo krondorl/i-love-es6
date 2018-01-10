@@ -14,3 +14,15 @@ https://caniuse.com/
 ## Math Problems
 
 These are solutions for mathematical practices.
+
+## Install
+
+For installing just use:
+
+```
+npm install
+```
+
+## Running
+
+I ran all files with Node.js v8.9.1.
