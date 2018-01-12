@@ -26,16 +26,6 @@ const isLeapYear = (year) => {
   return isLeap;
 }
 
-let dayNames = [
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-  'Sunday'
-];
-
 let monthDayLookup = {
   1: 31,
   2: 28,
@@ -52,11 +42,34 @@ let monthDayLookup = {
 };
 
 const calcSundays = () => {
-  let startYear    = 1900;
-  let startMonth   = 1;
-  let startDay     = 1;
-  let startDayName = 'Monday';
-  let endYear      = 2000;
-  let endMonth     = 12;
-  let endDay       = 31;
+  let startYear  = 1901;
+  let startMonth = 1;
+  let endYear    = 2000;
+  let endMonth   = 12;
+  let sundays    = [];
+  let dayName    = 1;
+
+  for (let year = startYear; year <= endYear; year++) {
+    if (isLeapYear(year)) {
+      monthDayLookup[2] = 29;
+    } else {
+      monthDayLookup[2] = 28;
+    }
+
+    for (let month = startMonth; month <= endMonth; month++) {
+      for (let day = 1; day <= monthDayLookup[month]; day++) {
+        if (day == 1 && dayName == 6) {
+          sundays.push(`${startYear}-${month}-${day}`);
+        }
+        if (dayName < 6) {
+          dayName++;
+        } else {
+          dayName = 0;
+        }
+      }
+    }
+  }
+  return sundays.length;
 }
+
+console.log(calcSundays());
