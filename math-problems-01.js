@@ -12,7 +12,7 @@ const multiples = (x) => {
   let mults = [];
   for (let i = 1; i < x; i++) {
     if (mod3(i) || mod5(i)) {
-      mults.push(i)
+      mults.push(i);
       console.log(`${i}, `);
     }
   }
